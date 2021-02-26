@@ -1,7 +1,7 @@
 
 :root{
     --main-color: skyblue;
-    --bg-color: red;
+    --bg-color: rgb(247, 247, 247);
   }
   
   .container{
@@ -17,9 +17,8 @@
   
   .nav{
     grid-area: nav;
-    padding: 100px;
     background-color: var(--bg-color);
-    text-align: center;
+    background-color: mediumturquoise
   }
   
   .main{
@@ -50,6 +49,23 @@
     text-align: center;
   }
   
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+}
+
+li{
+    float: left;
+
+}
+
+li a{
+    display: block;
+    padding: 8px;
+    background:  mediumturquoise32;
+}
   @media only screen and (max-width: 600px){
     .container{
       grid-template-columns: 1fr;
